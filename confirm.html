@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>企業・ビジネスサイト向け 無料ホームページテンプレート tp_biz55</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="js/ddmenu_min.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE COMPANY"></a></h1>
+</header>
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar" class="nav-fix-pos">
+<ul class="inner">
+<li><a href="index.html">HOME<span>ホーム</span></a></li>
+<li><a href="about.html">ABOUT<span>当サイトについて</span></a></li>
+<li><a href="javascript:void(0)" class="cursor-default">WORKS<span>業務内容</span></a>
+	<ul class="ddmenu">
+	<li><a href="works.html">メニュー</a></li>
+	<li><a href="works.html">メニュー</a></li>
+	<li><a href="works.html">メニュー</a></li>
+	<li><a href="works.html">メニュー</a></li>
+	<li><a href="works.html">メニュー</a></li>
+	</ul>
+</li>
+<li><a href="recruit.html">RECRUIT<span>採用情報</span></a></li>
+<li><a href="contact.html">CONTACT<span>お問い合わせ</span></a></li>
+</ul>
+</nav>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME<span>ホーム</span></a></li>
+<li><a href="about.html">ABOUT<span>当サイトについて</span></a></li>
+<li id="menubar_hdr2" class="close">WORKS<span>業務内容</span>
+	<ul id="menubar-s2">
+	<li><a href="works.html">メニュー</a></li>
+	<li><a href="works.html">メニュー</a></li>
+	<li><a href="works.html">メニュー</a></li>
+	<li><a href="works.html">メニュー</a></li>
+	<li><a href="works.html">メニュー</a></li>
+	</ul>
+</li>
+<li><a href="recruit.html">RECRUIT<span>採用情報</span></a></li>
+<li><a href="contact.html">CONTACT<span>お問い合わせ</span></a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<div class="inner">
+
+<section>
+
+<h2>CONTACT<span>確認画面</span></h2>
+
+<!-- フォームの情報はここからです -->
+<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<input type="hidden" name="mode" value="confirm">
+<table class="ta1">
+<!--<tr><td colspan="2" class="auto"><strong>確認画面</strong></td></tr>-->
+<!-- 入力／確認 -->
+<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
+<tr>
+<th width="150">お名前</th>
+<td>
+<input type="hidden" name="item1" value="<?php echo $form["item1"];?>">
+<?php echo $form["item1"];?>
+</td>
+</tr>
+<tr>
+<th width="150">メールアドレス</th>
+<td>
+<input type="hidden" name="item2" value="<?php echo $form["item2"];?>">
+<?php echo $form["item2"];?>
+</td>
+</tr>
+<tr>
+<th>お問い合わせ内容</th>
+<td>
+<input type="hidden" name="item3" value="<?php echo $form["item3"]; ?>">
+<?php echo nl2br($form["item3"]);?>
+</td>
+</tr>
+</table>
+<div class="c">
+<input type="submit" value="送信する" class="btn">
+&nbsp;
+<input type="button" value="戻る" onClick="document.form1.mode.value='reinput';document.form1.submit()" class="btn">
+</div>
+</form>
+<!-- フォームの情報はここまでです -->
+
+</section>
+
+</div>
+<!--/.inner-->
+
+</div>
+<!--/#contents-->
+
+<footer>
+
+<div id="footermenu" class="inner">
+<ul>
+<li class="title">タイトル</li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+<ul>
+<li class="title">タイトル</li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+<ul>
+<li class="title">タイトル</li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+<ul>
+<li class="title">タイトル</li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<div id="copyright">
+<ul class="icon">
+<li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+<li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+<li><a href="#"><img src="images/icon_youtube.png" alt="TouTube"></a></li>
+</ul>
+<small>Copyright&copy; <a href="index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+<!--/#copyright-->
+
+</footer>
+
+</div>
+<!--/#container-->
+
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
+<!--メニューの開閉処理-->
+<script>
+open_close("menubar_hdr", "menubar-s");
+</script>
+
+<!--「WORKS」の子メニュー-->
+<script>
+	open_close("menubar_hdr2", "menubar-s2");
+</script>
+
+</body>
+</html>
