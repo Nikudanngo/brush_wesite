@@ -388,7 +388,7 @@ footer .pr {display: block;font-size: 80%;}
 #footermenu {
 	overflow: hidden;
 	padding: 50px 0;	/*上下、左右へのボックス内の余白*/
-	background: url(../images/footer_logo.png) no-repeat right center / 20%;	/*背景画像の読み込み。*/
+	background: url(../images/footer_logo.png) no-repeat right center / 5%;	/*背景画像の読み込み。*/
 }
 /*リンクテキスト*/
 #footermenu li a {
