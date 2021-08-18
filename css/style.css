@@ -92,7 +92,7 @@ header #logo {
 /*メニュー１個あたりの設定*/
 #menubar ul li {
 	float: left;	/*左に回り込み*/
-	width: 20%;		/*幅。今回は５個なので、100÷5=20。*/
+	width: 25%;		/*幅。今回は５個なので、100÷5=20。*/
 	font-size: 20px;	/*文字サイズ*/
 }
 #menubar ul li a {
