@@ -206,7 +206,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	margin-bottom: 100px;
 	font-size: 300%;	/*文字サイズ*/
 	text-align: center;	/*文字をセンタリング*/
-	letter-spacing: 0.2em;	/*文字間隔を少し広めにとる指定。通常がいいならこの１行削除。*/
+	/* letter-spacing: 0.2em;	文字間隔を少し広めにとる指定。通常がいいならこの１行削除。 */
 }
 /*h2タグ内のspanタグ（装飾文字）*/
 #contents h2 span {
