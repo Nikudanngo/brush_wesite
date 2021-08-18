@@ -247,7 +247,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	overflow: hidden;				/*角丸から内容が飛び出ないよう、飛び出た部分を非表示にする指定*/
 	display: flex;
 	align-items: center;			/*中のブロックの縦並びの揃え方*/
-	background: #000;		/*背景色*/
+	background: rgb(146, 145, 66);		/*背景色*/
 	color: #fff;			/*文字色*/
 	margin: 0 3% 30px;		/*ボックスの下に空けるスペース。上、左右、下への順番。*/
 }
@@ -297,18 +297,19 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	right: 0px;
 	top: -40px;
 }
-/*１つ目ブロックに表示させるテキスト*/
-#contents .list:nth-of-type(1)::before {
-	content: "Works1";
-}
+
+/* １つ目ブロックに表示させるテキスト */
+/* #contents .list:nth-of-type(1)::before {
+	content: "";
+} */
 /*２つ目ブロックに表示させるテキスト*/
-#contents .list:nth-of-type(2)::before {
+/* #contents .list:nth-of-type(2)::before {
 	content: "Works2";
-}
+} */
 /*３つ目ブロックに表示させるテキスト*/
-#contents .list:nth-of-type(3)::before {
-	content: "Works3";
-}
+/* #contents .list:nth-of-type(3)::before {
+	content: "Works3"; */
+/* } */
 
 /*ボックス内のボタン（共通）*/
 .btn1 a {
