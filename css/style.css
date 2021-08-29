@@ -805,7 +805,7 @@ body {
     padding:80px 0px;
 }
 /* content */
-@media (min-width: 992px) {
+@media (min-width: 1000px) {
     .wrapper .container .content {
         display: flex;
         align-items: center;
@@ -813,7 +813,7 @@ body {
     }
 }
 /* PC時のみ順番を入れ替える */
-@media (min-width: 992px) {
+@media (min-width: 1000px) {
     #reposition {
         flex-direction:row-reverse;
     }
