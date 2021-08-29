@@ -32,11 +32,16 @@
 
 /*mainimg
 ---------------------------------------------------------------------------*/
-#mainimg {
-	clear: left;
-	width: 100%;
+#mainimg {	
+	background-size:contain;                 /* 画像のサイズを指定    */
+    width:100%;                              /* 横幅のサイズを指定    */
+    height:400px;   
 	position: relative;
+	background-image: url(../img/6_c.jpg);
+	background-image: url(../img/7_c.jpg);
+	background-image: url(../img/8_c.jpg);
 }
+
 .slide1,.slide2,.slide3 {
 	animation-duration: 15s;	/*アニメーションを実行する時間。「s」は秒の事。*/
 	animation-iteration-count:infinite;
