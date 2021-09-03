@@ -73,7 +73,13 @@ header #logo {
 }
 /*ロゴ画像（トップページへの追加設定）*/
 .home header #logo {
-	display: none;	/*スライドショーの邪魔なので非表示に*/
+	display: on;	/*スライドショーの邪魔なので非表示に*/
+	position: absolute;
+	top: 50%;
+    left: 20%; /*中央からやや左に配置*/
+    transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.3); /*背景を半透過*/
+	border-radius: 100%; /*画像を丸く切り取る*/
 }
 
 /*メインメニューのブロック
