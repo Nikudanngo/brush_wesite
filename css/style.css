@@ -270,6 +270,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 /*ボックス内のp（段落）タグ*/
 #contents .list p {
 	padding: 0;		/*余白のリセット*/
+	/* font-size: large; */
 }
 /*ボックス内のfigure画像*/
 #contents .list figure {
