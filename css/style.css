@@ -263,7 +263,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 }
 /*ボックス内のh4（見出し）タグ*/
 #contents .list h4 {
-	margin-bottom: 20px;	/*下のテキストとの間に空けるスペース*/
+	margin-bottom: 10px;	/*下のテキストとの間に空けるスペース*/
 	font-size: 180%;		/*文字サイズ*/
 	text-align: center;		/*文字をセンタリング*/
 }
@@ -326,7 +326,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	border: 1px solid #fff;		/*枠線の幅、線種、色*/
 	text-align: center;			/*テキストをセンタリング*/
 	padding: 10px 30px;			/*上下、左右へのボタン内の余白*/
-	margin: 20px auto 0;		/*上、左右、下へのボックスの外側への余白*/
+	margin: 10px auto 0;		/*上、左右、下へのボックスの外側への余白*/
 }
 /*ボタンのマウスオン時（共通）*/
 .btn1 a:hover {
