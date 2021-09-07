@@ -850,3 +850,30 @@ body {
     font-weight: normal;
     text-align: center;
 }
+/* fadeUp */
+
+.fadeUp{
+	animation-name:fadeUpAnime;
+	animation-duration:1.0s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	}
+	
+	@keyframes fadeUpAnime{
+	  from {
+		opacity: 0;
+	  transform: translateY(100px);
+	  }
+	
+	  to {
+		opacity: 1;
+	  transform: translateY(0);
+	  }
+	}
+	
+	/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+	 
+	.fadeUpTrigger{
+		opacity: 0;
+	}
+	
