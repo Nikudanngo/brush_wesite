@@ -73,13 +73,26 @@ header #logo {
 }
 /*ロゴ画像（トップページへの追加設定）*/
 .home header #logo {
-	display: on;	/*スライドショーの邪魔なので非表示に*/
+	display: on;	
 	position: absolute;
-	top: 50%;
-    left: 30%; /*中央からやや左に配置*/
+	top: 40%;
+    left: 25%; /*中央からやや左に配置*/
     transform: translate(-50%, -50%);
 	background-color: rgba(255, 255, 255, 0.3); /*背景を半透過*/
 	border-radius: 100%; /*画像を丸く切り取る*/
+}
+.home header #titleText{
+	font-size: 6vw;
+	position: absolute;
+	top: 90%;
+	left: 80%;
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	margin:0;
+	padding:0;
+	color: rgb(255, 255, 255);	
+	text-shadow: 0px 0px 10px rgb(54, 54, 54);
 }
 
 /*メインメニューのブロック
@@ -869,11 +882,28 @@ body {
 		opacity: 1;
 	  transform: translateY(0);
 	  }
-	}
-	
+	}	
 	/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-	 
 	.fadeUpTrigger{
 		opacity: 0;
 	}
+	.Product {
+		position: relative;
+		}
 	
+	.Product h2 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		transform: translate(-0%,-50%);
+		margin:0;
+		padding:0;
+		color: rgb(255, 255, 255);
+		text-shadow: 1px 0px 0px rgb(54, 54, 54);
+		}
+	
+	.Product img {
+		width: 100%;
+		}
