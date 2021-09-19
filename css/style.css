@@ -212,12 +212,14 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 /*コンテンツ
 ---------------------------------------------------------------------------*/
 #contents {
-	padding: 100px 0 50px;	/*上、左右、下へのコンテンツ内の余白*/
+	padding: 20px 0 20px;	/*上、左右、下へのコンテンツ内の余白*/
 	position: relative;
 	animation-name: opa2;	/*keyframes.cssで使う@keyframesの指定*/
 	animation-duration: 0.5S;	/*アニメーションの実行時間*/
 	animation-delay: 0.5s;		/*出現するタイミング（秒後）*/
 	animation-fill-mode: both;
+	background-color: rgb(255, 255, 255);
+	margin: 0 3% 30px;
 }
 /*h2タグ*/
 #contents h2 {
@@ -882,28 +884,31 @@ body {
 		opacity: 1;
 	  transform: translateY(0);
 	  }
-	}	
-	/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-	.fadeUpTrigger{
-		opacity: 0;
-	}
-	.Product {
-		position: relative;
-		}
-	
-	.Product h2 {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%,-50%);
-		-webkit-transform: translate(-50%,-50%);
-		transform: translate(-0%,-50%);
-		margin:0;
-		padding:0;
-		color: rgb(255, 255, 255);
-		text-shadow: 1px 0px 0px rgb(54, 54, 54);
-		}
-	
-	.Product img {
-		width: 100%;
-		}
+}	
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeUpTrigger{
+	opacity: 0;
+}
+/* Homeの説明ブロック */
+.Product {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.Product h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-0%,-50%);
+	margin:0;
+	padding:0;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+.Product img {
+	width: 100%;
+	/* border-radius: 15px; */
+}
