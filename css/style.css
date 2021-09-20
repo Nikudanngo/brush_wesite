@@ -86,19 +86,6 @@ header #logo {
 	background-color: rgba(255, 255, 255, 0.3); /*背景を半透過*/
 	border-radius: 100%; /*画像を丸く切り取る*/
 }
-#titleText{
-	font-size: 6vw;
-	position: absolute;
-	top: 80%;
-	left: 80%;
-	-ms-transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-	margin:0;
-	padding:0;
-	color: rgb(255, 255, 255);	
-	text-shadow: 0px 0px 10px rgb(54, 54, 54);
-}
 
 /*メインメニューのブロック
 ---------------------------------------------------------------------------*/
@@ -903,20 +890,19 @@ body {
 	margin-bottom: 30px;
 }
 
-.Product h2 {
-	font-size: 10vw;
+.Product #imgText {
+	font-size: 200%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%,-50%);
 	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-0%,-50%);
+	transform: translate(0%,-50%);
 	margin:0;
 	padding:0;
 	color: rgb(255, 255, 255);
 	text-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
-
 .Product img {
 	width: 100%;
 	margin-bottom: 20px;
