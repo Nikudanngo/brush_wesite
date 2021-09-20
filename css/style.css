@@ -86,10 +86,10 @@ header #logo {
 	background-color: rgba(255, 255, 255, 0.3); /*背景を半透過*/
 	border-radius: 100%; /*画像を丸く切り取る*/
 }
-.home header #titleText{
+#titleText{
 	font-size: 6vw;
 	position: absolute;
-	top: 90%;
+	top: 80%;
 	left: 80%;
 	-ms-transform: translate(-50%,-50%);
 	-webkit-transform: translate(-50%,-50%);
