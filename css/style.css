@@ -229,6 +229,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 /*h3タグ*/
 #contents h3 {
 	clear: both;
+	text-align: center;
 	margin-bottom: 30px;
 	font-size: 150%;	/*文字サイズ*/
 	border-bottom: 1px solid #ccc;	/*下線の幅、線種、色*/
