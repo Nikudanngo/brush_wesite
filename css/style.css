@@ -860,6 +860,10 @@ body {
     font-weight: normal;
     text-align: center;
 }
+.wrapper .text span {
+	font-size: 120%;
+	color: rgb(0, 81, 95);
+}
 /* fadeUp */
 
 .fadeUp{
