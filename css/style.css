@@ -78,7 +78,6 @@ header #logo {
 }
 /*ロゴ画像（トップページへの追加設定）*/
 .home header #logo {
-	display: on;	
 	position: absolute;
 	top: 50%;
     left: 30%; /*中央からやや左に配置*/
