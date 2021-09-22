@@ -1,0 +1,49 @@
+/* オープニングアニメーション */
+.shutter{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    background-color:#fff;
+    z-index:99;
+    -webkit-animation: byeShutter 3.0s forwards;
+    animation: byeShutter 3.0s forwards;
+  }
+  .logo {
+    position: absolute;
+    width: 220px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: logo 0.8s forwards;
+    animation: logo 0.8s forwards;
+    animation-delay: 0.5s;
+  }
+  @keyframes byeShutter {
+  70% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  }
+  @keyframes logo {
+  0% {
+    opacity: 1;
+  }
+    
+  50% {
+    transform: rotate(0deg);     
+  }
+    100% {
+    transform: scale(0.8);
+    }
+  }
