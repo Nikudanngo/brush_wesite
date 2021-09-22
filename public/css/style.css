@@ -239,6 +239,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 /*段落タグ*/
 #contents p {
 	padding: 0 3% 30px;	/*上、左右、下への余白*/
+	text-align: center;
 }
 #contents h2 + p,
 #contents h3 + p {

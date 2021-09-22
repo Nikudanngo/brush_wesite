@@ -9,6 +9,7 @@
 <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
 <link rel="stylesheet" href="css/style.css">
 <link rel="shortcut icon" href="images/fabicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 <script src="js/openclose.js"></script>
 <script src="js/fixmenu.js"></script>
 <script src="js/fixmenu_pagetop.js"></script>
@@ -70,33 +71,39 @@
 <section>
 
 <h2>CONTACT<span>お問い合わせ</span></h2>
-<p class="check">※当ページ（contact.html）はフォームの見本ページです。実際の自動フォームには使いませんのでご注意下さい。</p>
-<p><strong class="color1">自動フォームを使う場合（※編集に入る前にご確認下さい）</strong><br>
-あなたのメールアドレス設定と、簡単な編集だけで使えます。<a href="https://template-party.com/file/formgen_manual_set2.html" target="_blank">こちらのマニュアルをご覧下さい。</a></p>
-<p><strong class="color1">自動フォームを使わない場合</strong><br>
-テンプレートに梱包されている「form.html」「confirm.html」「finish.html」の3枚のファイルを削除して下さい。</p>
-
-<table class="ta1">
-<tr>
-<th>お名前※</th>
-<td><input type="text" name="お名前" size="30" class="ws"></td>
-</tr>
-<tr>
-<th>メールアドレス※</th>
-<td><input type="text" name="メールアドレス" size="30" class="ws"></td>
-</tr>
-<tr>
-<th>お問い合わせ詳細※</th>
-<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl"></textarea></td>
-</tr>
-</table>
-
-<p class="c">
-<input type="submit" value="内容を確認する" class="btn">
-</p>
-
+<p>商品へのお問い合わせや、大量注文のご依頼は以下の方法で承ります。</p>
 </section>
 
+<section class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div class="content-item">
+				<!-- メールアドレスを載せる -->
+				<a href="mailto:info@example.com">
+					<h3 class="heading">mail <i class="material-icons">mail</i></h3>
+				</a>
+                    <p>
+						メールの受付は月~金 10:00~17:00の間にご対応可能です．
+						<!-- メールアドレスを載せる -->
+						<a href="mailto:info@example.com">メールはこちらへ</a>
+                    </p>
+            </div>    
+            <div class="content-item">
+                <div class="text">
+					<!-- ラインの公式アカウントのシェアURLを載せる -->
+					<a href="https://github.com/Nikudanngo/brush_wesite">
+						<h3 class="heading">Line <i class="material-icons">message</i></h3>
+					</a>
+                    <p>
+						Lineの受付は月~金 10:00~20:00の間にご対応可能です．
+						<!-- ラインの公式アカウントのシェアURLを載せる -->
+						<a href="https://github.com/Nikudanngo/brush_wesite">友だち追加はこちら</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
 <!--/.inner-->
 
@@ -139,6 +146,7 @@ open_close("menubar_hdr", "menubar-s");
 <script>
 	open_close("menubar_hdr2", "menubar-s2");
 </script>
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/anime.js"></script><!--←本体の下に設置しないと動きません！-->
 </body>
 </html>
