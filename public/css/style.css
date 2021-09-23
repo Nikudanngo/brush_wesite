@@ -828,7 +828,7 @@ body {
 @media (min-width: 1000px) {
     .wrapper .container .content {
         display: flex;
-        align-items: center;
+		align-items: flex-start;
         justify-content: center;
     }
 }
@@ -839,7 +839,7 @@ body {
     }
 }
 .wrapper .content-item {
-    width:100%;
+	width:100%;
 }
 @media (min-width: 992px) {
     .wrapper .content-item {
