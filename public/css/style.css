@@ -854,6 +854,12 @@ body {
 	border-radius:30px;
 	border: 3px #2e2e2e solid;
 }
+#vertical {
+	width: 500px;
+}
+#beside {
+	width: 300px;
+}
 .wrapper .text{
     padding:50px;
 }
@@ -896,12 +902,15 @@ body {
 	position: relative;
 	margin-bottom: 30px;
 }
+.Product h1 {
+	width: 700px;
+}
 
 .Product #imgText {
 	font-size: 5vw;
 	position: absolute;
 	top: 40%;
-	left: 55%;
+	left: 50%;
 	-ms-transform: translate(-50%,-50%);
 	-webkit-transform: translate(-50%,-50%);
 	transform: translate(0%,-50%);
