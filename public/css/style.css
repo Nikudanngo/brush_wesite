@@ -852,7 +852,7 @@ body {
 	max-height: 500px;
     margin:0px auto;
 	border-radius:30px;
-	border: 3px #2e2e2e solid;
+	border: 3px #2e2e2e solid;                
 }
 #vertical {
 	width: 500px;
@@ -861,14 +861,18 @@ body {
 	width: 300px;
 }
 .wrapper .text{
-    padding:50px;
+    padding:0px 50px 0px 50px;
 }
 .wrapper .text .heading{
-    margin:0px 0px 40px 0px;
+	margin-bottom: 20px;
     font-size: 24px;
     font-weight: normal;
     text-align: center;
 }
+.wrapper .text .heading #minititle {
+	margin-bottom: 20px;
+}
+
 .wrapper .text span {
 	font-size: 120%;
 	color: rgb(0, 81, 95);
