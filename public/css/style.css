@@ -860,6 +860,12 @@ body {
 #beside {
 	width: 300px;
 }
+#vertical {
+	width: 500px;
+}
+#beside {
+	width: 300px;
+}
 .wrapper .text{
     padding:0px 50px 0px 50px;
 }
