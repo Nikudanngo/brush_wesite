@@ -902,15 +902,12 @@ body {
 	position: relative;
 	margin-bottom: 30px;
 }
-.Product h1 {
-	width: 700px;
-}
 
 .Product #imgText {
-	font-size: 5vw;
+	font-size: 4vw;
 	position: absolute;
 	top: 40%;
-	left: 50%;
+	left: 55%;
 	-ms-transform: translate(-50%,-50%);
 	-webkit-transform: translate(-50%,-50%);
 	transform: translate(0%,-50%);
