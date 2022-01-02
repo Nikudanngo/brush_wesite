@@ -1,5 +1,6 @@
 // This is your secret API key.
-const stripe = require('stripe')(SECRETAPIKEY);
+const stripe = require('stripe')(APISecretKey);
+const { createSecretKey } = require('crypto');
 const express = require('express');
 const app = express();
 app.use(express.static('public'));
