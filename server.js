@@ -4,14 +4,14 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'));
 
-const YOUR_DOMAIN = 'http://localhost:4242';
+const YOUR_DOMAIN = 'https://thoughtofoceans.com/';
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
         // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-        price: 'price_1KDQ5CLfq32jdgt5tkglXJlU',
+        price: 'price_1KDR9cLfq32jdgt5CyC2N3Rg',
         quantity: 1,
       },
     ],
