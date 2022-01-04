@@ -11,6 +11,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Logo from './logo.png';
 import Avatar from '@mui/material';
+import Routing from './Routing';
+import {Outlet, Link as RouterLink } from "react-router-dom";
 
 import Home from './Home';
 
@@ -41,7 +43,13 @@ const ResponsiveAppBar = () => {
     window.location.reload(false);
   }
 
+  const linkTo=(name)=>{
+    window.location.href = "/"+name;
+    handleCloseNavMenu();
+  }
+
   return (
+    <div>
     <AppBar position="static" color='default'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -79,14 +87,23 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
+                component={RouterLink} 
+                to={"/"+page}
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={()=>{
+                  handleCloseNavMenu();
+                }}
                 sx={{ my: 1, color:'black', display: 'block' }}
-              >
+                // element={Link}
+                // to={"/"+page}
+                
+                
+                >
                 {page}
               </Button>
             ))}
           </Box>
+            
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -117,7 +134,11 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page}     
+                  onClick={()=>{
+                  window.location.href = "/"+page;
+                  handleCloseNavMenu();
+                }}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -156,6 +177,11 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+    {/* <Link to="/App">App</Link>
+    <Outlet />*/}
+
+    
+    </div>
   );
 };
 
