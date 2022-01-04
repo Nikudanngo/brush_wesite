@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'));
 
-const YOUR_DOMAIN = 'https://thoughtofoceans.com/';
+const YOUR_DOMAIN = 'https://thoughtofoceans.com';
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
