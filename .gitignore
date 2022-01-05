@@ -65,5 +65,4 @@ node_modules/
 # dotenv environment variables file
 .env
 
-public/checkout.js
-public/javascript/app.js
+.DS_Store
