@@ -1,15 +1,16 @@
 // This is your test secret API key.
 // const stripe = require('stripe')('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'); //本番
-// const STRIPE_PUBLISHABLE_KEY=<'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'>;
+const STRIPE_PUBLISHABLE_KEY=<'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'>;
 const stripe = require('stripe')('sk_test_51KDPLeLfq32jdgt5Ct46nhXSPfb4aKuyfZIk40WG9EGZqYiqHPsSl0QvnDJctYOdAFd65uhuKwID6akWns5GVWSb00nrEP04IB'); //テスト
 const express = require('express');
 const app = express();
 app.use(express.static('public'));
 
-const YOUR_DOMAIN = 'http://localhost:4242';
+const YOUR_DOMAIN = 'http://t';
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
+    customer_email: 'allthumbs.co@gmail.com',
     submit_type: 'pay',
     payment_method_types: ['card'],
     billing_address_collection: 'required',
@@ -44,5 +45,3 @@ app.post('/create-checkout-session', async (req, res) => {
 
   res.redirect(303, session.url);
 });
-
-app.listen(4242, () => console.log('Running on port 4242'));
