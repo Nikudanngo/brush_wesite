@@ -3,9 +3,9 @@
 // const STRIPE_PUBLISHABLE_KEY=<'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'>;　//本番
 const STRIPE_PUBLISHABLE_KEY='sk_test_51KDPLeLfq32jdgt5Ct46nhXSPfb4aKuyfZIk40WG9EGZqYiqHPsSl0QvnDJctYOdAFd65uhuKwID6akWns5GVWSb00nrEP04IB'; //テスト
 const stripe = require('stripe')(STRIPE_PUBLISHABLE_KEY); //今はテスト
-const express = require('express');
+import express, { static } from 'express';
 const app = express();
-app.use(express.static('public'));
+app.use(static('public'));
 
 const YOUR_DOMAIN = 'https://thoughtofoceans.com';
 
