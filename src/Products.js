@@ -7,9 +7,8 @@ import { Link } from 'react-router-dom';
 export default function Products() {
   return (
     <div>
-      <Header />
-        <Link to="/">Invoices</Link> 
-        <Link to="/App">Expenses</Link>
+        <Link to="/">Invoices</Link>
+        <Link to="/home">Expenses</Link>
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import * as React from 'react';
 import Header from './Header';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 function Contact () {
 //   const [tanukiti,setTanukiti]=React.useState(false);
     return (
         <div>
-            <Header />
             <Button variant="contained" color="primary">
-                Hello World
+                <Link to="/">Invoices</Link>
             </Button>
         </div>
     );
