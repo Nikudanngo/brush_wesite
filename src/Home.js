@@ -6,7 +6,6 @@ function Home () {
 //   const [tanukiti,setTanukiti]=React.useState(false);
     return (
         <div>
-            <Header />
             <Button variant="contained" color="primary">
                 Hello World
             </Button>
