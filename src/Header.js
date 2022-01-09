@@ -7,11 +7,9 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import { Link, NavLink,BrowserRouter as Router } from 'react-router-dom';
+import { Link, Route ,BrowserRouter as Router } from 'react-router-dom';
 import Logo from './logo.png';
 
 const pages = ['Home', 'Products', 'Contact'];
@@ -40,11 +38,10 @@ const ResponsiveAppBar = () => {
     };
 
   return (
-  <Router>
+  // <Router>
     <AppBar position="static" color='default'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link to="/">
             <Typography
               variant="h6"
               noWrap
@@ -53,7 +50,6 @@ const ResponsiveAppBar = () => {
             >
               Thougt of oceans
             </Typography>
-          </Link>
           {/* HOMEアイコン */}
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -78,9 +74,10 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link key={page} to={"/" + page}>
               <Button
                 key={page}
+                component={Link} // <Link>を使うためのコンポーネント
+                to = {"/" + page} //
                 onClick={()=>{
                   handleCloseNavMenu();
                 }}
@@ -91,7 +88,6 @@ const ResponsiveAppBar = () => {
                 >
                 {page}
               </Button>
-            </Link>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
@@ -124,7 +120,10 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page}     
+                <MenuItem 
+                key={page}
+                component={Link} // <Link>を使うためのコンポーネント
+                to={"/"+page} 
                 onClick={()=>{
                     handleCloseNavMenu();
                 }}>
@@ -166,7 +165,7 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
-  </Router>
+  // </Router>
   );
 };
 export default ResponsiveAppBar;

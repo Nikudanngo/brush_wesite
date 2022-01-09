@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './Header';
 import reportWebVitals from './reportWebVitals';
-import Home from './Home';
-import App from './App';
 import Routing from './Routing';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
+    {/* <Header />  ここにHeaderを書くんじゃなくてRouting.jsに書く*/} 
     <Routing />
   
   </React.StrictMode>,
