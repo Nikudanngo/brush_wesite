@@ -9,7 +9,7 @@ import Routing from './Routing';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <Header />
     <Routing />
   
   </React.StrictMode>,

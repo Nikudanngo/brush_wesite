@@ -8,7 +8,7 @@ export default function Products() {
   return (
     <div>
         <Link to="/">Invoices</Link>
-        <Link to="/home">Expenses</Link>
+        <Link to="/home">home</Link>
     </div>
   );
 }

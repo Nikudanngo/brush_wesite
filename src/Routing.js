@@ -8,7 +8,6 @@ import Header from './Header';
 import Products from './Products';
 import Contact from './Contact';
 
-
 const Routing = () => {
     return (
       <div>
@@ -17,7 +16,6 @@ const Routing = () => {
                 <Route path="/Home" element={<Home />} />
                 <Route path="/Products" element={<Products />} />
                 <Route path="/Contact" element={<Contact />} />
-
                   {/* Not Found */}
             </Routes>
         </BrowserRouter>

@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import { Link } from 'react-router-dom';
+import { Link, NavLink,BrowserRouter as Router } from 'react-router-dom';
 import Logo from './logo.png';
 
 const pages = ['Home', 'Products', 'Contact'];
@@ -36,21 +36,24 @@ const ResponsiveAppBar = () => {
   };
 
   const handleNavMenuItemClick = (event) => {
-    setAnchorElNav(null); 
+          
     };
 
   return (
+  <Router>
     <AppBar position="static" color='default'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-          >
-            Thought of Oceans
-          </Typography>
+          <Link to="/">
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            >
+              Thougt of oceans
+            </Typography>
+          </Link>
           {/* HOMEアイコン */}
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -75,6 +78,7 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
+              <Link key={page} to={"/" + page}>
               <Button
                 key={page}
                 onClick={()=>{
@@ -87,9 +91,9 @@ const ResponsiveAppBar = () => {
                 >
                 {page}
               </Button>
+            </Link>
             ))}
           </Box>
-            
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -122,7 +126,6 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page}     
                 onClick={()=>{
-                    window.location.href = "/"+page;
                     handleCloseNavMenu();
                 }}>
                   <Typography textAlign="center">{page}</Typography>
@@ -163,6 +166,7 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+  </Router>
   );
 };
 export default ResponsiveAppBar;
