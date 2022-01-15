@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link, Route ,BrowserRouter as Router } from 'react-router-dom';
-import Logo from './logo.png';
+
 
 const pages = ['Home', 'Products', 'Contact'];
 const settings = ['Account', 'Dashboard', 'Logout'];
@@ -60,7 +60,6 @@ const ResponsiveAppBar = () => {
               onClick={handleCloseNavMenu} // ページリロード
               color='default'
             >
-              <img src={Logo} alt="logo" className='homeIcon'/>
             </IconButton>
           </Box>
 

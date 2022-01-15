@@ -13,7 +13,66 @@ code {
 }
 
 .homeIcon {
-  width: 50px;
-  height: 50px;
   fill: #fff;
+  background-color: rgba(255, 255, 255, 0.3); /*背景を半透過*/
+  border-radius: 50%;
+  position: absolute;
+	/* top: 50%; */
+  /* left: 30%; 中央からやや左に配置 */
+  /* transform: translate(-50%, -50%); */
+}
+
+@media  screen and (min-width: 100px) {
+  .homeIcon {
+    max-width: 130px;
+    top: 8%;
+    left: 10%;
+  }
+}
+@media screen and (min-width: 370px) {
+  .homeIcon {
+    max-width: 130px;
+    top: 13%;
+    left: 10%;
+  }
+}
+@media screen and (min-width: 400px) {
+  .homeIcon {
+    max-width: 150px;
+    top: 10%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .homeIcon {
+    max-width: 200px;
+    top : 15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .homeIcon {
+    max-width: 300px;
+    left: 15%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .homeIcon {
+    max-width: 400px;
+    top: 10%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .homeIcon {
+    max-width: 500px;
+    top: 15%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .homeIcon {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .homeIcon {
+    top: 25%;
+  }
 }
