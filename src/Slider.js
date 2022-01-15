@@ -4,10 +4,10 @@ import slide1 from './img/6_c.jpg';
 import slide2 from './img/7_c.jpg';
 import slide3 from './img/8_c.jpg';
 import slide4 from './img/ocean01.jpeg';
-import slide from './slide.css';
+import slideStyle from './slide.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Logo from './logo.png';
+import Logo from './img/logo.png';
 
 export default function Slide () {
     const settings = {
@@ -54,7 +54,7 @@ export default function Slide () {
             <Slider {...settings}>
                 {Slides.map((slide, index) => (
                     <div key={index}>
-                        <img src={slide} alt="slide" />
+                        <img src={slide} alt="slideStyle" />
                     </div>
                 ))}
             </Slider>
