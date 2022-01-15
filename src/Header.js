@@ -9,7 +9,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Link, Route ,BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { ClassNames } from '@emotion/react';
 
 
 const pages = ['Home', 'Products', 'Contact'];
@@ -32,14 +33,10 @@ const ResponsiveAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
-  const handleNavMenuItemClick = (event) => {
-          
-    };
-
+  
   return (
   // <Router>
-    <AppBar position="static" color='default'>
+    <AppBar position="static" color='default'> {/* positionをstatic -> スクロールで固定される. fixed -> スクロールon */}
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             <Typography

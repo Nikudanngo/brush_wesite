@@ -27,7 +27,7 @@ img {
   @media screen and (min-width: 370px) {
     .homeIcon {
       max-width: 130px;
-      top: 13%;
+      top: 10%;
       left: 10%;
     }
   }
