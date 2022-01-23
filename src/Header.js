@@ -10,10 +10,9 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import { ClassNames } from '@emotion/react';
+import { styled } from '@material-ui/core/styles';
 
-
-const pages = ['Home', 'Products', 'Contact'];
+const pages = ['Home', 'Products', 'Instruction', 'Contact' ];
 const settings = ['Account', 'Dashboard', 'Logout'];
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -33,10 +32,12 @@ const ResponsiveAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  
+  const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
   return (
   // <Router>
-    <AppBar position="static" color='default'> {/* positionをstatic -> スクロールで固定される. fixed -> スクロールon */}
+  <React.Fragment>
+    {/* positionをstatic -> スクロールで固定される. fixed -> スクロールon */}
+    <AppBar position="fixed" color='default'> 
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             <Typography
@@ -88,7 +89,7 @@ const ResponsiveAppBar = () => {
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
-              size="large"
+              size="small"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
@@ -128,40 +129,12 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-              {/* アイコン/ユーザーメニュー */}
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
+              {/* アイコン/ユーザーメニュー はなし*/}
         </Toolbar>
       </Container>
     </AppBar>
-  // </Router>
+  <Offset />
+</React.Fragment>
   );
 };
 export default ResponsiveAppBar;
