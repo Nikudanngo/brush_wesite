@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faAmazon } from '@fortawesome/free-brands-svg-icons'
 import { Link as MuiLink } from '@material-ui/core'
-import Logo from './img/logo.png';
+// import Logo from './img/logo.png';
 
 const useStyle = makeStyles({
     footer: {
@@ -12,10 +12,9 @@ const useStyle = makeStyles({
         textAlign: "center",
         fontSize: "15px",
         color: "#333",
-        position: "stick", // "sticky"にするとbottomナビゲーションバーになる
+        // position: "", // "sticky"にするとbottomナビゲーションバーになる
         left: 0,
         bottom: 0,
-        width: "100%",
         height: "100px",
         zIndex: "999",
     },

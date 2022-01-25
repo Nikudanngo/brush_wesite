@@ -15,8 +15,8 @@ import { styled } from '@material-ui/core/styles';
 const pages = ['Home', 'Products', 'Instruction', 'Contact' ];
 const settings = ['Account', 'Dashboard', 'Logout'];
 const ResponsiveAppBar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+const [anchorElNav, setAnchorElNav] = React.useState(null);
+const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
