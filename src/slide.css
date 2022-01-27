@@ -7,6 +7,21 @@ img {
     /* z-index: -1; */
 }
 
+.slideText  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 0.5rem #000;
+    /* z-index: 1; */
+}
+
 .homeIcon {
     fill: #fff;
     background-color: rgba(255, 255, 255, 0.3); /*背景を半透過*/
@@ -63,12 +78,8 @@ img {
   }
   @media screen and (min-width: 1440px) {
     .homeIcon {
-      max-width: 600px;
-    }
-  }
-  @media screen and (min-width: 1920px) {
-    .homeIcon {
-      top: 25%;
+      max-width: 500px;
+      left: 20%;
     }
   }
   

@@ -8,8 +8,24 @@ import slideStyle from './slide.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logo from './img/logo.png';
+import { makeStyles } from "@material-ui/core/styles";
 
+const useStyle = makeStyles({
+    slideText: {
+        position: "absolute",
+        top: "70%",
+        left: "70%",
+        transform: "translate(-50%, -50%)",
+        color: "#fff",
+        fontSize: "calc(3px + 2vmin)",
+        fontWeight: "bold",
+        textAlign: "center",
+        textShadow: "0 0 5px #333",
+        fontFamily: "Sawarabi Gothic",
+    },
+});
 export default function Slide () {
+    const classes = useStyle();
     const settings = {
         dots: true,
         infinite: true,
@@ -19,33 +35,8 @@ export default function Slide () {
         autoplay: true,
         autoplaySpeed: 4500, //defualt 3000
         arrows: false,
-        // ここから下はいらんかも
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+        pauseOnHover: true,
+        fade: true,  //フェードイン
     };
     const Slides = [slide1, slide2, slide3, slide4];
     return (
@@ -55,6 +46,13 @@ export default function Slide () {
                 {Slides.map((slide, index) => (
                     <div key={index}>
                         <img src={slide} alt="slideStyle" />
+                        <span className={classes.slideText}>
+                            <h1>
+                                竹歯ブラシ
+                                <br />
+                                KAGUYA
+                            </h1>
+                        </span>
                     </div>
                 ))}
             </Slider>

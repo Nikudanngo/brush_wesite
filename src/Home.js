@@ -1,10 +1,25 @@
 import * as React from 'react';
 import Slider from './Slider';
+import { makeStyles } from "@material-ui/core/styles";
+
+
+const useStyle = makeStyles({
+    home: {
+        textAlign: "left",
+    },
+});
 
 function Home () {
-//   const [tanukiti,setTanukiti]=React.useState(false);
+    const classes = useStyle();
     return (
-        <Slider />
+        <div className={classes.home}>
+            <Slider />
+            <div>
+                <h1>
+                    竹歯ブラシ
+                </h1>
+            </div>
+        </div>
     );
 }
 export default Home;
