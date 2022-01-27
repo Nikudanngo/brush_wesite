@@ -4,26 +4,61 @@ import slide1 from './img/6_c.jpg';
 import slide2 from './img/7_c.jpg';
 import slide3 from './img/8_c.jpg';
 import slide4 from './img/ocean01.jpeg';
-import slideStyle from './slide.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logo from './img/logo.png';
 import { makeStyles } from "@material-ui/core/styles";
 
+// スタイルの設定
 const useStyle = makeStyles({
     slideText: {
         position: "absolute",
         top: "70%",
         left: "70%",
         transform: "translate(-50%, -50%)",
-        color: "#fff",
+        color: "#f8f9fa",
         fontSize: "calc(3px + 2vmin)",
         fontWeight: "bold",
         textAlign: "center",
         textShadow: "0 0 5px #333",
         fontFamily: "Sawarabi Gothic",
     },
+    slide: {
+        height: "auto",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+    },
+    homeIcon: {
+        position: "absolute",
+        fill: "#fff",
+        backgroundColor: "rgba(255, 255, 255, 0.3)",
+        borderRadius: "50%",
+        "@media (min-width: 0px)": {
+            maxWidth: "130px",
+            top: "13%",
+            left: "10%",
+        },
+        "@media (min-width: 601px)": {
+            maxWidth: "200px",
+            top: "16%",
+            left: "10%",
+        },
+        "@media (min-width: 992px)": {
+            maxWidth: "300px",
+            top: "20%",
+            left: "10%",
+        },
+        "@media (min-width: 1200px)": {
+            maxWidth: "400px",
+            top: "40%",
+            left: "50%",
+            transform: "translate(-110%, -50%)", // 中心基準にする
+        },
+    },
 });
+
+// main
 export default function Slide () {
     const classes = useStyle();
     const settings = {
@@ -45,7 +80,7 @@ export default function Slide () {
             <Slider {...settings}>
                 {Slides.map((slide, index) => (
                     <div key={index}>
-                        <img src={slide} alt="slideStyle" />
+                        <img src={slide} className={classes.slide} />
                         <span className={classes.slideText}>
                             <h1>
                                 竹歯ブラシ
@@ -57,7 +92,7 @@ export default function Slide () {
                 ))}
             </Slider>
             </div>
-            <img src={Logo} alt="logo" className='homeIcon'/>
+            <img src={Logo} className={classes.homeIcon}/>
 
         </div>
     );

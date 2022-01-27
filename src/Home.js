@@ -16,7 +16,7 @@ function Home () {
             <Slider />
             <div>
                 <h1>
-                    竹歯ブラシ
+                    
                 </h1>
             </div>
         </div>
