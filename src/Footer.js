@@ -67,7 +67,7 @@ export default function Footer () {
             >
                 <FontAwesomeIcon icon={faAmazon} />
             </MuiLink>
-            <p>© 2021-2022 allthumbs .co.LTD</p>
+            <p>© 2021-2022 allthumbs .Co.,LTD</p>
         </div>
     );
 }
