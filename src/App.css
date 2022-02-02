@@ -24,6 +24,25 @@
   color: white;
 }
 
+.home {
+  text-align: center;
+  font-family: noto sans jp;
+}
+
+.span {
+  display: block;
+  font-size: calc(3px + 2vmin);
+  color : rgba(33, 37, 41, 0.8);
+}
+
+.text {
+  font-size: calc(7px + 2vmin);
+  margin-top: 50px;
+  color: #212529;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
 .App-link {
   color: #e2f9ff;
 }

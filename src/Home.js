@@ -19,22 +19,6 @@ const useStyle = makeStyles({
             boxShadow: "0px 0px 0px 0px",
         },
     },
-    home: {
-        textAlign: "center",
-        fontFamily: "noto sans jp",
-    },
-    text: {
-        fontSize: "calc(7px + 2vmin)",
-        marginTop: "50px",
-        color: "#212529",
-        fontWeight: "500",  
-        letterSpacing: "0.5px",
-    },
-    span: {
-        display: "block",
-        fontSize: "calc(3px + 2vmin)",
-        color : "rgba(33, 37, 41, 0.8)",
-    },
     imageList: {
         // 中央寄せ
         margin: "0 auto",
@@ -77,7 +61,7 @@ function ColumnsGrid() {
         >
           <Grid item xs={8} >
             <Item >
-                <h2 className={classes.text}>
+                <h2 className="text">
                     あなたの生活に<br />
                     自然な歯ブラシを
                 </h2>
@@ -100,15 +84,15 @@ function Home () {
     return (
         <React.Fragment>
         <CssBaseline />
-        <div className={classes.home}>
+        <div className="home">
             <div>
                 <Slider />
             </div>
             <Container>
-                <div className={classes.text}>
+                <div className="text">
                     <h1>
                         Bamboo toothbrush
-                        <span className={classes.span}>
+                        <span className="span">
                             竹から生まれた歯ブラシ
                         </span>
                     </h1>
