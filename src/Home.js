@@ -8,7 +8,9 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import json2mq from 'json2mq';
 import useMediaQuery from '@mui/material/useMediaQuery';
-
+import Buying from './Buy';
+import { Container } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
 
 const useStyle = makeStyles({
     root: {
@@ -40,7 +42,8 @@ const useStyle = makeStyles({
         "@media (max-width: 600px)": {
             width: "100%",
         },
-    }
+    },
+
 });
 
 // 二分画面設定
@@ -95,21 +98,27 @@ function ColumnsGrid() {
 function Home () {
     const classes = useStyle();
     return (
+        <React.Fragment>
+        <CssBaseline />
         <div className={classes.home}>
-            <Slider />
-            <div className={classes.text}>
-                <h1>
-                    Bamboo toothbrush
-                    <span className={classes.span}>
-                        竹から生まれた歯ブラシ
-                    </span>
-                </h1>
-            </div>
             <div>
-            {/* ↓は上の関数に記載 */}
-             <ColumnsGrid /> 
+                <Slider />
             </div>
+            <Container>
+                <div className={classes.text}>
+                    <h1>
+                        Bamboo toothbrush
+                        <span className={classes.span}>
+                            竹から生まれた歯ブラシ
+                        </span>
+                    </h1>
+                </div>
+                {/* ↓は上の関数に記載 */}
+                <ColumnsGrid /> 
+                <Buying />
+            </Container>
         </div>
+    </React.Fragment>    
     );
 }
 export default Home;
