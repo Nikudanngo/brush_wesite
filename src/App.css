@@ -24,9 +24,9 @@
   color: white;
 }
 
-.home {
+.main {
   text-align: center;
-  font-family: noto sans jp;
+  font-family: 'noto sans jp';
 }
 
 .span {
@@ -36,9 +36,10 @@
 }
 
 .text {
+  font-family: 'noto sans jp';
   font-size: calc(7px + 2vmin);
-  margin-top: 50px;
-  color: #212529;
+  padding: 0.1em;
+  color: black;
   font-weight: 500;
   letter-spacing: 0.5px;
 }

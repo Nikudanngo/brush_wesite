@@ -15,7 +15,7 @@ export default function MasonryImageList() {
     <Box 
       sx={{
         margin:"0 auto", // 中央寄せ
-        width: "80%", // スマホの可読性up
+        width: "100%", // スマホの可読性up
         height: 400, 
         overflowY: 'scroll' 
       }}
