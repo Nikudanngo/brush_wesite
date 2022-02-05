@@ -10,11 +10,18 @@ import { Box } from '@mui/system';
 import { Link } from 'react-router-dom';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import json2mq from 'json2mq';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const useStyle = makeStyles({
     root: {
         maxWidth: 650,
         margin: "10px auto",
+    },
+    price: {
+        display: "flex",
+        justifyContent: "flex-end",
+        fontSize: "calc(3px + 2vmin)",
+        color : "rgba(33, 37, 41, 0.8)",
     },
 });
 
@@ -40,6 +47,10 @@ export default function Buying() {
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
                         竹歯ブラシ-KAGUYA
+                    </Typography>
+                    {/* 値段 */}
+                    <Typography variant="h6" color="textSecondary" component="div" className={classes.price}>
+                        ¥300/本
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         天然の竹を使用した、歯ブラシです。

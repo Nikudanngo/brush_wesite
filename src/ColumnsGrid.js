@@ -13,16 +13,8 @@ const useStyle = makeStyles({
         "& .MuiPaper-root": {
             boxShadow: "0px 0px 0px 0px",
         },
+        marginBottom: "4rem",
     },
-    imageList: {
-        // 中央寄せ
-        margin: "0 auto",
-        // スマホ用
-        "@media (max-width: 600px)": {
-            width: "100%",
-        },
-    },
-
 });
 
 
@@ -46,34 +38,35 @@ export default function ColumnsGrid(props) {
     );
 
     const rowOrReverse = props.row;
-
+    const columnOrReverse = props.column;
     return (
       <Box sx={{ flexGrow: 1}} className={classes.root}>
         <Grid
             container
             spacing={2}
             columns={16}
-            direction={responsChangeAction ? rowOrReverse : "column"} // rowは横並び, columnは縦並び
-            justifyContent="space-evenly"
+            direction={responsChangeAction ? rowOrReverse : columnOrReverse} // rowは横並び, columnは縦並び
+            justifyContent="flex-start"
             alignItems="center"
         >
           <Grid item xs={8} >
             <Item >
-                {/* あなたの生活に<br />
-                自然な歯ブラシを */}
+                {/* 文字コンテンツ */}
                 {props.title.map((text, index) => (
-                    <h2 className='text' key={index}>
-                        {text}
-                        <br />
-                    </h2>
+                  <h2 className='text' key={index}>
+                      {text}
+                      <br />
+                  </h2>
                 ))}
+                <p className='document'>
+                  {props.document}
+                </p>
             </Item>
           </Grid>
           <Grid item xs={8}>
-            <Item >
-                {/* 画像リスト ImageList.jsに記載 */}
-                {/* <ImageList />  */}
-                {props.image}
+            <Item className={classes.image}>
+              {/* 画像コンテンツ */}
+              {props.image}
             </Item>
           </Grid>
         </Grid>

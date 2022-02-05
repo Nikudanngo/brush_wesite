@@ -10,7 +10,7 @@ import ColumnsGrid from './ColumnsGrid';
 // メイン
 function Home () {
     return (
-        <React.Fragment>
+        <React.Fragment> 
         <CssBaseline />
         <div className="main">
             <Slider />
@@ -30,6 +30,7 @@ function Home () {
                         ["あなたの生活に","自然な歯ブラシを"]
                     }
                     image={<ImageList/>} // image枠にImageListを渡す
+                    column="column"
                     row="row" // "row":文字/画像， "row-reverse"：画像/文字
                     /> 
                 <Buying />
