@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main {
+  text-align: center;
+  font-family: 'noto sans jp';
+}
+
+.span {
+  display: block;
+  font-size: calc(3px + 2vmin);
+  color : rgba(33, 37, 41, 0.8);
+}
+
+.document {
+  margin: 0 auto;
+  display: block;
+  font-size: calc(2px + 2vmin);
+  color : rgba(33, 37, 41, 0.8);
+  width: 80%;
+}
+
+ol {
+  font-size: calc(2px + 2vmin);
+  color : rgba(33, 37, 41, 0.8);
+  text-align: left;
+}
+
+li {
+  margin-bottom: calc(1px + 2vmin);
+}
+
+p {
+  margin: 0 auto;
+  display: block;
+  font-size: calc(4px + 2vmin);
+  color : rgba(33, 37, 41, 0.8);
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.p {
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-family: 'noto sans jp';
+  font-size: calc(10px + 2vmin);
+  margin-top: 0;
+  padding: 0.1em;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.App-link {
+  color: #e2f9ff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
