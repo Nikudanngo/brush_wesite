@@ -1,167 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
-<<<<<<< HEAD
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>竹歯ブラシ-KAGUYA</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="竹歯ブラシブランドKAGUYAの公式webサイト.家庭用からホテル用に幅広くご利用いただける竹歯ブラシを販売しています．大量注文も承ります.">
-<meta name="keywords" content="KAGUYA,竹歯ブラシ,環境保護,公式ホームページ,Thought of Oceans,SDGs">
-<link rel="shortcut icon" href="images/fabicon.png">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/slide.css">
-<link rel="stylesheet" href="css/opening.css">
-<script src="js/openclose.js"></script>
-<script src="js/fixmenu.js"></script>
-<script src="js/fixmenu_pagetop.js"></script>
-<script src="js/ddmenu_min.js"></script>
-<!-- <script src="js/app.js"></script> -->
-<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
-<script src="https://js.stripe.com/v3/"></script>
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
-<div class="shutter">
-    <img src="images/logo.png" alt="ロゴ" class="logo"/>
-  </div>
-<body class="home">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="日本人のために設計された竹歯ブラシ-KAGUYAの公式サイト。竹歯ブラシブランドThought of Oceanから高品質な歯ブラシを全国どこでもお届けします。"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-<div id="container">
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>竹歯ブラシ-KAGUYA</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-<header>
-<!--スライドショー-->
-<aside id="mainimg">
-<img src="img/6_c.jpg" alt="" class="slide0">
-<img src="img/7_c.jpg" alt="" class="slide1">
-<img src="img/8_c.jpg" alt="" class="slide2">
-<img src="img/ocean01.jpeg" alt="" class="slide3">
-<div id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE COMPANY"></a></div>
-</aside>
-</header>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-<!--PC用（801px以上端末）メニュー-->
-<nav id="menubar" class="nav-fix-pos">
-<ul class="inner">
-<li><a href="index.html">HOME<span>ホーム</span></a></li>
-<li><a href="javascript:void(0)" class="cursor-default">PRODUCT<span>商品</span></a>
-	<ul class="ddmenu">
-	<li><a href="product1.html">竹歯ブラシ</a></li>
-	<!-- <li><a href="product1.html">メニュー</a></li>
-	<li><a href="product1.html">メニュー</a></li>
-	<li><a href="product1.html">メニュー</a></li>
-	<li><a href="product1.html">メニュー</a></li> -->
-	</ul>
-</li>
-<li><a href="instructions.html">INSTRUCTION<span>取り扱い</span></a></li>
-<li><a href="contact.html">CONTACT<span>お問い合わせ</span></a></li>
-</ul>
-</nav>
-
-<!--小さな端末用（800px以下端末）メニュー-->
-<nav id="menubar-s">
-<ul>
-<li><a href="index.html">HOME<span>ホーム</span></a></li>
-<li id="menubar_hdr2" class="close">PRODUCT<span>商品</span>
-	<ul id="menubar-s2">
-	<li><a href="product1.html">竹歯ブラシ</a></li>
-	<!-- <li><a href="product1.html">メニュー</a></li>
-	<li><a href="product1.html">メニュー</a></li>
-	<li><a href="product1.html">メニュー</a></li>
-	<li><a href="product1.html">メニュー</a></li> -->
-	</ul>
-</li>
-<li><a href="instructions.html">INSTRUCTION<span>取り扱い</span></a></li>
-<li><a href="contact.html">CONTACT<span>お問い合わせ</span></a></li>
-</ul>
-</nav>
-
-<div id="contents">
-
-<div class="inner">
-
-<section>
-	<h2>地球を想うデザイン<span>私たちにできる小さな改革</span></h2>
-
-<div class="Product" id="To1">
-	<a href="product1.html"><img src="img/mainImage.jpg"></a>
-	<h1 id="imgText">竹から<wbr>生まれた<br>歯ブラシ</h1>
-	<!-- <p>テキストテキスト</p> -->
-</div>
-<!-- 以下に環境問題について語る -->
-
-
-</section>
-
-<section id="new">
-<h2>News<span>お知らせ</span></h2>
-<!-- ここにお知らせを追記していく -->
-
-<dl>
-	<dt>2021/09/16</dt>
-	<dd>オーガニックライフスタイルexpoに参加しました。</dd>
-</dl>
-<dl>
-	<dt>2021/06/23</dt>
-	<dd>Amazonにて販売開始しました。</dd>
-</dl>
-
-</section>
-<!--/#new-->
-<div class="list">
-	<figure><a href="product1.html"><img src="img/8_s.jpg" alt=""></a></figure>
-	<div class="text">
-        <h4>竹歯ブラシ</h4>
-        <form class="btn1"><a target="_blank" href="https://www.amazon.co.jp/Thought-Oceans-KAGUYA-ヘッド小さめ-口当たり滑らか/dp/B0972DYKQG/ref=sr_1_1?m=A3I6MWRX1EEVQE&marketplaceID=A1VC38T7YXB528&qid=1636774659&s=merchant-items&sr=1-1">購入する(Amazon)</a></from>
-        <form class="btn1"><a target="_blank" href="https://www.amazon.co.jp/Thought-Oceans-KAGUYA-ヘッド小さめ-口当たり滑らか/dp/B09LTMX925/ref=sr_1_2?m=A3I6MWRX1EEVQE&marketplaceID=A1VC38T7YXB528&qid=1637899354&s=merchant-items&sr=1-2">まとめて購入する(Amazon)</a></form>
-        <!-- <form class="btn1" action="/create-checkout-session" method="POST"><button target="_blank" type="submit" id="checkout-button">今すぐ購入する</button></form> -->
-        <form class="btn1"><a target="_blank" href="https://buy.stripe.com/00gcPd0Eu2FjbiofYY">今すぐ購入する</a></form>
-    </div>
-	</div>
-</div>
-
-</div>
-<!--/.inner-->
-
-</div>
-<!--/#contents-->
-
-<footer>
-<!--/#footermenu-->
-
-<div id="copyright">
-	<ul class="icon">
-
-<li><a href="https://www.instagram.com/okinagram/"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
-
-</ul>
-<small>Copyright&copy; <a href="index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
-<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
-</div>
-<!--/#copyright-->
-
-</footer>
-
-</div>
-<!--/#container-->
-
-<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
-
-<!--メニュー開閉ボタン-->
-<div id="menubar_hdr" class="close"></div>
-
-<!--メニューの開閉処理-->
-<script>
-open_close("menubar_hdr", "menubar-s");
-</script>
-
-<!--「product1」の子メニュー-->
-<script>
-	open_close("menubar_hdr2", "menubar-s2");
-</script>
-
-</body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
-
