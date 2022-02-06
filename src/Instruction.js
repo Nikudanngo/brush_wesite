@@ -19,9 +19,9 @@ export default function Instruction() {
               取り扱い
             </span>
           </h1>
-          <p>
+          <h2 className="text">
             本製品の使用上の注意
-          </p>
+          </h2>
           <Paper>
             <ol>
               {instructions.map((instruction) => (

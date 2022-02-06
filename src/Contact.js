@@ -50,9 +50,9 @@ function Contact () {
                         お問い合わせ
                     </span>
                 </h1>
-                <p>
+                <h2 className='text'>
                 商品へのお問い合わせや、お見積もりのご依頼は以下の方法で承ります。
-                </p>
+                </h2>
             </div>
             {/* 二分割画面 */}
             <Box sx={{ flexGrow: 1, px: 3 }} className={classes.root}>
