@@ -43,6 +43,16 @@
   width: 80%;
 }
 
+ol {
+  font-size: calc(2px + 2vmin);
+  color : rgba(33, 37, 41, 0.8);
+  text-align: left;
+}
+
+li {
+  margin-bottom: calc(1px + 2vmin);
+}
+
 p {
   margin: 0 auto;
   display: block;

@@ -17,7 +17,7 @@ function Home () {
             <Container>
                 <div className="text">
                     <h1>
-                        Bamboo toothbrush
+                        BAMBOO TOOTHBRUSH
                         <span className="span">
                             竹から生まれた歯ブラシ
                         </span>
