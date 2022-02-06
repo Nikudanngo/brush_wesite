@@ -43,6 +43,19 @@
   width: 80%;
 }
 
+p {
+  margin: 0 auto;
+  display: block;
+  font-size: calc(4px + 2vmin);
+  color : rgba(33, 37, 41, 0.8);
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.p {
+  margin-bottom: 1rem;
+}
+
 .text {
   font-family: 'noto sans jp';
   font-size: calc(10px + 2vmin);
