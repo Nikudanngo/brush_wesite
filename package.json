@@ -24,6 +24,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
+    "serve": "^13.0.2",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.2"
   },
