@@ -8,6 +8,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Instruction from './Instruction';
 import { makeStyles } from "@material-ui/core/styles";
+import Button from '@material-ui/core/Button';
 
 const useStyle = makeStyles({
   root: {
@@ -36,8 +37,11 @@ const Routing = () => {
                   <h1 style={{textAlign: 'center', marginTop: "10px"}}>
                     404 Not Found
                     <br />
-                    お探しのぺーじは見つかりませんでした。
+                    お探しのページは見つかりませんでした。
                     <br />
+                    <Button variant="contained" color="defalt" href="/">
+                      ホームへ戻る
+                    </Button>
                   </h1>} 
                   />
                   
