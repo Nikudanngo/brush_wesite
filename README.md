@@ -23,5 +23,7 @@
 本番用のアプリをビルドする.\
 ついでにいろいろハッシュされて最適化される.
 
+# 公開しているサイトのリンク
 
+[https://thoughtofoceans.com/](https://thoughtofoceans.com/)
 
