@@ -7,6 +7,7 @@ import ColumnsGrid from "./component/ColumnsGrid";
 import inCup from "./img/imageList/inCup.jpg";
 import onTowel from "./img/imageList/LyingOnTowel.jpg";
 import onPowder from "./img/imageList/onPowder.jpg";
+import CycleImg from "./img/cycle.png";
 
 const useStyle = makeStyles({
   root: {
@@ -73,6 +74,15 @@ export default function Products() {
             image={<img src={onTowel} className={classes.image} alt="写真3" />}
             column="column-reverse"
             row="row"
+          />
+          <ColumnsGrid
+            title={["サイクルシステムの", "ご紹介"]}
+            document={
+              "弊社ではホテル様から竹ゴミを買い取り、それらは竹炭商品として生まれ変わります。"
+            }
+            image={<img src={CycleImg} className={classes.image} alt="写真4" />}
+            column="column-reverse"
+            row="row-reverse"
           />
           <Buying />
         </Container>
