@@ -37,6 +37,15 @@ const Buying = () => {
         <Card>
           <CardActionArea>
             <CardContent>
+              <CardMedia
+                component="img"
+                alt="Contemplative Reptile"
+                height="140"
+                // ランダムな画像
+                src="https://source.unsplash.com/random"
+                title="Contemplative Reptile"
+              />
+
               <Typography gutterBottom variant="h5" component="div">
                 竹歯ブラシ-KAGUYA
               </Typography>
