@@ -6,7 +6,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@mui/material";
 import ColumnsGrid from "../components/ColumnsGrid";
 import Buying from "../components/Buy";
-import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -69,7 +68,7 @@ const Products: NextPage = () => {
               document={
                 "十分な強度としなやかさをもった竹歯ブラシを作るには、ひとつの歯ブラシに3年以上の乾燥と徹底した研磨が必要です。私たちは、お客様が安心してご使用できるように、全ての歯ブラシを研磨・検品を行っています。"
               }
-              image={<Image width={500} height={750} src={inCup} alt="写真1" />}
+              image={<img src={inCup} alt="写真1" />}
               column="column-reverse"
               row="row"
             />
@@ -79,13 +78,7 @@ const Products: NextPage = () => {
                 "日本人のためにデザインされた、ちょうどいい大きさで心地よい磨き心地。徹底的な品質管理、特殊な加工によりなめらかな肌触りを実現。"
               }
               image={
-                <Image
-                  width={500}
-                  height={300}
-                  src={onPowder}
-                  className={classes.image}
-                  alt="写真2"
-                />
+                <img src={onPowder} className={classes.image} alt="写真2" />
               }
               column="column-reverse"
               row="row-reverse"
@@ -96,13 +89,7 @@ const Products: NextPage = () => {
                 "プラスチックの使用を95%以上削減。これにより、焼却時に発生する有害物質を大幅に削減可能。"
               }
               image={
-                <Image
-                  width={500}
-                  height={330}
-                  src={onTowel}
-                  className={classes.image}
-                  alt="写真3"
-                />
+                <img src={onTowel} className={classes.image} alt="写真3" />
               }
               column="column-reverse"
               row="row"
@@ -113,13 +100,7 @@ const Products: NextPage = () => {
                 "弊社ではホテル様から竹ゴミを買い取り、それらは竹炭商品として生まれ変わります。"
               }
               image={
-                <Image
-                  width={500}
-                  height={400}
-                  src={CycleImg}
-                  className={classes.image}
-                  alt="写真4"
-                />
+                <img src={CycleImg} className={classes.image} alt="写真4" />
               }
               column="column-reverse"
               row="row-reverse"

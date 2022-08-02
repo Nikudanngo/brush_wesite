@@ -1,6 +1,5 @@
 import * as React from "react";
 import type { NextPage } from "next";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react"; //カルーセルに必要なタグをインポート
 import SwiperCore, { Pagination, Autoplay, EffectFade } from "swiper"; //欲しい機能をインポート
 import s from "./TestCarousel.module.css"; //同じディレクトリにCSSを用意
@@ -26,8 +25,11 @@ const useStyle = makeStyles({
     zIndex: 1,
   },
   slide: {
+    height: "auto",
+    maxWidth: "1200px",
+    width: "100%",
     display: "flex",
-    justifyContent: "center",
+    margin: "0 auto",
   },
   homeIcon: {
     position: "absolute",
@@ -39,13 +41,13 @@ const useStyle = makeStyles({
     borderRadius: "50%",
     zIndex: 1,
     "@media (min-width: 0px)": {
-      maxWidth: "130px",
+      maxWidth: "100px",
     },
     "@media (min-width: 600px)": {
       maxWidth: "200px",
     },
     "@media (min-width: 900px)": {
-      maxWidth: "200px",
+      maxWidth: "250px",
     },
     "@media (min-width: 1200px)": {
       maxWidth: "300px",
@@ -81,16 +83,15 @@ const Slide: NextPage = () => {
       >
         {Slides.map((src, index: number) => {
           return (
-            <SwiperSlide key={`${index}`} className={classes.slide}>
-              <Image
+            <SwiperSlide key={`${index}`}>
+              <img
+                className={classes.slide}
                 src={src}
                 // layout="responsive"
-                width={1200}
-                height={675}
-                alt="test_image"
+                alt="slide images"
               />
-              <span className={classes.homeIcon}>
-                <Image src={Logo} width={300} height={300} alt="logo" />
+              <span>
+                <img src={Logo} className={classes.homeIcon} alt="logo" />
               </span>
               <span className={classes.slideText}>
                 <h1>
