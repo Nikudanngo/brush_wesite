@@ -11,7 +11,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AppBarOffset from "../components/AppberOffset";
+import AppBarOffset from "./AppBerOffset";
 
 const pages = ["", "Products", "Instruction", "Contact"];
 
@@ -27,14 +27,7 @@ const Header: NextPage = () => {
   };
   return (
     <React.Fragment>
-      <AppBar
-        position="fixed"
-        color="default"
-        style={{
-          boxShadow:
-            "0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 20%), 0px 1px 3px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
-        }}
-      >
+      <AppBar position="fixed" color="default">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography

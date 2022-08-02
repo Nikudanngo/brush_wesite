@@ -26,7 +26,7 @@ export default function ColumnsGrid(props: any) {
   const rowOrReverse = props.row;
   const columnOrReverse = props.column;
   return (
-    <Box sx={{ flexGrow: 1 }} style={{ marginBottom: "4rem" }}>
+    <Box sx={{ flexGrow: 1, boxShadow: 0 }} style={{ marginBottom: "4rem" }}>
       <Grid
         container
         spacing={2}
@@ -36,7 +36,7 @@ export default function ColumnsGrid(props: any) {
         alignItems="center"
       >
         <Grid item xs={8}>
-          <Item>
+          <Item style={{ boxShadow: "0px 0px 0px 0px" }}>
             {/* 文字コンテンツ */}
             {props.title.map((text: string, index: number) => (
               <h2 key={index}>
@@ -48,7 +48,7 @@ export default function ColumnsGrid(props: any) {
           </Item>
         </Grid>
         <Grid item xs={8}>
-          <Item>
+          <Item style={{ boxShadow: "0px 0px 0px 0px" }}>
             {/* 画像コンテンツ */}
             {props.image}
           </Item>

@@ -22,6 +22,7 @@ export default function MasonryImageList() {
           width: "100%", // スマホの可読性up
           height: 400,
           overflowY: "scroll",
+          boxShadow: 0,
         }}
       >
         <ImageList variant="masonry" cols={3} gap={8} rowHeight="auto">

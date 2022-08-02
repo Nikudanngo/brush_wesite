@@ -13,7 +13,6 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
-import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 
 // 二分画面設定
@@ -62,7 +61,7 @@ const Contact: NextPage = () => {
             alignItems="flex-start"
           >
             <Grid item xs={8}>
-              <Item>
+              <Item style={{ boxShadow: "0px 0px 0px 0px" }}>
                 <Button color="inherit" href="mailto:allthumbs.co@gmail.com">
                   <h3>Mail</h3>
                   <EmailIcon />
@@ -94,7 +93,7 @@ const Contact: NextPage = () => {
               </Item>
             </Grid>
             <Grid item xs={8}>
-              <Item>
+              <Item style={{ boxShadow: "0px 0px 0px 0px" }}>
                 <Button
                   color="inherit"
                   target="_blank"
