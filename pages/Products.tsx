@@ -47,7 +47,7 @@ const Products: NextPage = () => {
     <React.Fragment>
       <div>
         <Head>
-          <title>Thought of oceans</title>
+          <title>竹歯ブラシ-KAGUYA</title>
           <meta
             name="description"
             content="日本人のために設計された竹歯ブラシ-KAGUYAの公式サイト。竹歯ブラシブランドThought of Oceanから高品質な歯ブラシを全国どこでもお届けします。"
