@@ -114,18 +114,18 @@ const Header: NextPage = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem
-                    key={page}
-                    onClick={() => {
-                      handleCloseNavMenu();
-                    }}
-                  >
-                    <Link href={`/${page}`} key={page}>
+                  <Link href={`/${page}`} key={page}>
+                    <MenuItem
+                      key={page}
+                      onClick={() => {
+                        handleCloseNavMenu();
+                      }}
+                    >
                       <Typography textAlign="center">
                         {page === "" ? "Home" : page}
                       </Typography>
-                    </Link>
-                  </MenuItem>
+                    </MenuItem>
+                  </Link>
                 ))}
               </Menu>
             </Box>
