@@ -11,10 +11,6 @@ import "swiper/css/effect-fade";
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
 
 const useStyle = makeStyles({
-  root: {
-    width: "100%",
-    maxWidth: "1200px",
-  },
   slideText: {
     maxWidth: "1200px",
     position: "absolute",
@@ -77,7 +73,6 @@ const Slide: NextPage = () => {
           bulletActiveClass: `swiper-pagination-bullet-active ${s.custom_bullet_active}`, //アクティブなアイコンのクラスを指定
         }}
         loop={true}
-        className={classes.root}
         effect="fade"
         fadeEffect={{ crossFade: true }}
         autoplay={{ delay: 4500, disableOnInteraction: true }}

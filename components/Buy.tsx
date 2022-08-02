@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "@mui/system";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from "json2mq";
+import Link from "next/link";
 
 const useStyle = makeStyles({
   root: {
@@ -35,32 +36,35 @@ const Buying = () => {
       <Grid item xs={12}>
         <Card>
           <CardActionArea>
-            <CardContent>
-              <CardMedia
-                component="img"
-                alt="Contemplative Reptile"
-                // ランダムな画像
-                src="https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2FonPowder.jpg?alt=media&token=886ed2e7-9d40-4b2a-af63-9e34a848e874"
-                title="Contemplative Reptile"
-              />
+            <Link href="/Products">
+              <CardContent>
+                <CardMedia
+                  component="img"
+                  alt="Contemplative Reptile"
+                  height="240"
+                  // ランダムな画像
+                  src="https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2FonPowder.jpg?alt=media&token=886ed2e7-9d40-4b2a-af63-9e34a848e874"
+                  title="Contemplative Reptile"
+                />
 
-              <Typography gutterBottom variant="h5" component="div">
-                竹歯ブラシ-KAGUYA
-              </Typography>
-              {/* 値段 */}
-              <Typography
-                variant="h6"
-                color="textSecondary"
-                component="div"
-                className={classes.price}
-              >
-                ¥300/本
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                天然の竹を使用した、歯ブラシです。
-                日本人のために設計されたノズルとグリップで、快適な磨き心地を実現しました。
-              </Typography>
-            </CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  竹歯ブラシ-KAGUYA
+                </Typography>
+                {/* 値段 */}
+                <Typography
+                  variant="h6"
+                  color="textSecondary"
+                  component="div"
+                  className={classes.price}
+                >
+                  ¥300/本
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  天然の竹を使用した、歯ブラシです。
+                  日本人のために設計されたノズルとグリップで、快適な磨き心地を実現しました。
+                </Typography>
+              </CardContent>
+            </Link>
           </CardActionArea>
           <CardActions>
             <Button
@@ -78,8 +82,8 @@ const Buying = () => {
             </Button>
 
             {/* SPA変遷 */}
-            <Button size="small" color="primary" href={"/Products"}>
-              Learn more
+            <Button size="small" color="primary">
+              <Link href="/Products">Learn more</Link>
             </Button>
           </CardActions>
         </Card>

@@ -12,6 +12,9 @@
   justify-content: center;
   align-items: center;
   font-family: "noto sans jp";
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .footer {
@@ -66,8 +69,18 @@
 .span {
   display: block;
   text-align: center;
-  font-size: calc(3px + 2vmin);
+  font-size: calc(3px + 3vmin);
   color: rgba(33, 37, 41, 0.8);
+}
+
+.ol {
+  font-size: calc(5px + 3vmin);
+  color: rgba(33, 37, 41, 0.8);
+  text-align: left;
+}
+
+.li {
+  margin-bottom: calc(1px + 2vmin);
 }
 
 .description {
