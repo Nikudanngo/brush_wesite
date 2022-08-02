@@ -8,6 +8,8 @@ body {
     "Sawarabi Gothic", "Sawarabi Mincho", "Klee One", "Noto Sans JP", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0 auto;
 }
 
 a {
