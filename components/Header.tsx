@@ -11,17 +11,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import AppBarOffset from "../components/AppberOffset";
 
 const pages = ["", "Products", "Instruction", "Contact"];
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    toolbar: {
-      ...theme.mixins.toolbar,
-    },
-  })
-);
 const Header: NextPage = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -32,10 +25,16 @@ const Header: NextPage = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const classes = useStyles();
   return (
     <React.Fragment>
-      <AppBar position="fixed" color="default">
+      <AppBar
+        position="fixed"
+        color="default"
+        style={{
+          boxShadow:
+            "0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 20%), 0px 1px 3px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
+        }}
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -133,7 +132,7 @@ const Header: NextPage = () => {
           </Toolbar>
         </Container>
       </AppBar>
-      <div className={classes.toolbar} />
+      <AppBarOffset />
     </React.Fragment>
   );
 };

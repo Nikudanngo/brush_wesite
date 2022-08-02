@@ -16,34 +16,32 @@ const Instruction: NextPage = () => {
 
   return (
     <React.Fragment>
-      <div>
-        <Head>
-          <title>竹歯ブラシ-KAGUYA</title>
-          <meta
-            name="description"
-            content="日本人のために設計された竹歯ブラシ-KAGUYAの公式サイト。竹歯ブラシブランドThought of Oceanから高品質な歯ブラシを全国どこでもお届けします。"
-          />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Header />
-        <main className={styles.main}>
-          <div>
-            <h1 className={styles.text}>
-              INSTRUCTION
-              <span className={styles.span}>取り扱い</span>
-            </h1>
-            <h2 className={styles.description}>本製品の使用上の注意</h2>
-            <ol className={styles.ol}>
-              {instructions.map((instruction) => (
-                <li className={styles.li} key={instruction}>
-                  {instruction}
-                </li>
-              ))}
-            </ol>
-          </div>
-        </main>
-        <Footer />
-      </div>
+      <Head>
+        <title>竹歯ブラシ-KAGUYA</title>
+        <meta
+          name="description"
+          content="日本人のために設計された竹歯ブラシ-KAGUYAの公式サイト。竹歯ブラシブランドThought of Oceanから高品質な歯ブラシを全国どこでもお届けします。"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <main className="main">
+        <div>
+          <h1 className="text">
+            INSTRUCTION
+            <span className="span">取り扱い</span>
+          </h1>
+          <h2 className="description">本製品の使用上の注意</h2>
+          <ol className="ol">
+            {instructions.map((instruction) => (
+              <li className={styles.li} key={instruction}>
+                {instruction}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </main>
+      <Footer />
     </React.Fragment>
   );
 };

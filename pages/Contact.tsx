@@ -7,7 +7,6 @@ import json2mq from "json2mq";
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import { makeStyles } from "@material-ui/core/styles";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import ListAltIcon from "@mui/icons-material/ListAlt";
@@ -16,15 +15,6 @@ import Head from "next/head";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
-const useStyle = makeStyles({
-  root: {
-    // これでGridの影(shadow)が消える
-    "& .MuiPaper-root": {
-      boxShadow: "0px 0px 0px 0px",
-    },
-    marginBottom: "4rem",
-  },
-});
 
 // 二分画面設定
 const Item = styled(Paper)(({ theme }) => ({
@@ -35,8 +25,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Contact: NextPage = () => {
-  const classes = useStyle();
-
   const responsChangeAction = useMediaQuery(
     json2mq({
       minWidth: 900, // ブレイクポイント
@@ -54,18 +42,16 @@ const Contact: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className={styles.main}>
-        <div className="text">
-          <h1 className={styles.text}>
-            CONTACT
-            <span className={styles.span}>お問い合わせ</span>
-          </h1>
-          <h2 className={styles.description}>
-            商品へのお問い合わせや、お見積もりのご依頼は以下の方法で承ります。
-          </h2>
-        </div>
+      <main className="main">
+        <h1 className="text">
+          CONTACT
+          <span className="span">お問い合わせ</span>
+        </h1>
+        <h2 className="description">
+          商品へのお問い合わせや、お見積もりのご依頼は以下の方法で承ります。
+        </h2>
         {/* 二分割画面 */}
-        <Box sx={{ flexGrow: 1, px: 3 }} className={classes.root}>
+        <Box sx={{ flexGrow: 1, px: 3 }}>
           <Grid
             component={(props) => <Box {...props} />} // ここ意味わからん
             container

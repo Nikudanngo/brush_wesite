@@ -1,0 +1,36 @@
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 999;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: #333;
+  margin: 0 30px;
+}
+
+.icon:hover {
+  color: #0070f3;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}

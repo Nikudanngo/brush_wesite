@@ -1,0 +1,44 @@
+.slideText {
+  max-width: 1200px;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #f8f9fa;
+  font-size: clamp(0.2rem, 2vw, 1.5rem);
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 0 5px #333;
+  font-family: Sawarabi Gothic;
+  z-index: 1;
+}
+
+.slide {
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.homeIcon {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  fill: #f8f9fa;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  z-index: 1;
+  width: 30%;
+}
+
+.custom_bullet {
+  background: white;
+  opacity: 0.5;
+}
+
+.custom_bullet_active {
+  background: white;
+  opacity: 1;
+}

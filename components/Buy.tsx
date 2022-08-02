@@ -4,27 +4,13 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions, Grid } from "@mui/material";
-import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "@mui/system";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from "json2mq";
 import Link from "next/link";
-
-const useStyle = makeStyles({
-  root: {
-    maxWidth: 650,
-    margin: "10px auto",
-  },
-  price: {
-    display: "flex",
-    justifyContent: "flex-end",
-    fontSize: "calc(3px + 2vmin)",
-    color: "rgba(33, 37, 41, 0.8)",
-  },
-});
+import styles from "../styles/Buy.module.css";
 
 const Buying = () => {
-  const classes = useStyle();
   // レスポンシブ対応関数
   const responsChangeAction = useMediaQuery(
     json2mq({
@@ -32,7 +18,7 @@ const Buying = () => {
     })
   );
   return (
-    <Box sx={{ flexGrow: 1 }} className={classes.root}>
+    <Box sx={{ flexGrow: 1 }} className={styles.root}>
       <Grid item xs={12}>
         <Card>
           <CardActionArea>
@@ -55,7 +41,7 @@ const Buying = () => {
                   variant="h6"
                   color="textSecondary"
                   component="div"
-                  className={classes.price}
+                  className={styles.price}
                 >
                   ¥300/本
                 </Typography>

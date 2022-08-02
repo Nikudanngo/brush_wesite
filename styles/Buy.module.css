@@ -1,0 +1,11 @@
+.root {
+  max-width: 650px;
+  margin: 10px auto;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+  font-size: calc(3px + 2vmin);
+  color: rgba(33, 37, 41, 0.8);
+}

@@ -5,17 +5,6 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import json2mq from "json2mq";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyle = makeStyles({
-  root: {
-    // これでGridの影(shadow)が消える
-    "& .MuiPaper-root": {
-      boxShadow: "0px 0px 0px 0px",
-    },
-    marginBottom: "4rem",
-  },
-});
 
 // 二分画面設定
 const Item = styled(Paper)(({ theme }) => ({
@@ -27,8 +16,6 @@ const Item = styled(Paper)(({ theme }) => ({
 
 // 二分画面関数
 export default function ColumnsGrid(props: any) {
-  const classes = useStyle();
-
   // レスポンシブ対応関数
   const responsChangeAction = useMediaQuery(
     json2mq({
@@ -39,7 +26,7 @@ export default function ColumnsGrid(props: any) {
   const rowOrReverse = props.row;
   const columnOrReverse = props.column;
   return (
-    <Box sx={{ flexGrow: 1 }} className={classes.root}>
+    <Box sx={{ flexGrow: 1 }} style={{ marginBottom: "4rem" }}>
       <Grid
         container
         spacing={2}
@@ -52,12 +39,12 @@ export default function ColumnsGrid(props: any) {
           <Item>
             {/* 文字コンテンツ */}
             {props.title.map((text: string, index: number) => (
-              <h2 className="text" key={index}>
+              <h2 key={index}>
                 {text}
                 <br />
               </h2>
             ))}
-            <p className="document">{props.document}</p>
+            <p>{props.document}</p>
           </Item>
         </Grid>
         <Grid item xs={8}>

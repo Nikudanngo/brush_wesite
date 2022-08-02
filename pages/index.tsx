@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Slide from "../components/Slider";
 import ColumnsGrid from "../components/ColumnsGrid";
@@ -21,10 +20,10 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Slide />
-      <main className={styles.main}>
-        <h1 className={styles.text}>
+      <main className="main">
+        <h1 className="text">
           BAMBOO TOOTHBRUSH
-          <span className={styles.span}>竹から生まれた歯ブラシ</span>
+          <span className="span">竹から生まれた歯ブラシ</span>
         </h1>
         {/* ColoumnsGrid.jsに記載 */}
         <ColumnsGrid
