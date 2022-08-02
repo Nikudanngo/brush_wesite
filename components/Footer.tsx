@@ -20,7 +20,8 @@ const useStyle = makeStyles({
     zIndex: 1,
   },
   icon: {
-    fontSize: "30px",
+    width: "30px",
+    height: "30px",
     color: "#333",
     margin: "0 30px",
     "&:hover": {
@@ -52,9 +53,8 @@ const Footer: NextPage = () => {
         href="https://www.instagram.com/okinagram/"
         target="_blank"
         rel="noopener noreferrer"
-        className={classes.icon}
       >
-        <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faInstagram} className={classes.icon} />
       </MuiLink>
 
       {/* アマゾンのアイコン */}
@@ -62,9 +62,8 @@ const Footer: NextPage = () => {
         href="https://www.amazon.co.jp/s?me=A3I6MWRX1EEVQE&marketplaceID=A1VC38T7YXB528"
         target="_blank"
         rel="noopener noreferrer"
-        className={classes.icon}
       >
-        <FontAwesomeIcon icon={faAmazon} />
+        <FontAwesomeIcon icon={faAmazon} className={classes.icon} />
       </MuiLink>
       <p>© 2021-2022 allthumbs .Co.,LTD</p>
     </div>

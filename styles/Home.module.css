@@ -57,7 +57,7 @@
 
 .text {
   font-family: "noto sans jp";
-  font-size: calc(10px + 4vmin);
+  font-size: calc(20px + 4vmin);
   margin-top: 0;
   padding: 0.1em;
   color: black;

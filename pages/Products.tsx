@@ -57,7 +57,7 @@ const Products: NextPage = () => {
         <Header />
         <div className={styles.main}>
           <Container>
-            <h1 className={styles.title}>
+            <h1 className={styles.text}>
               KAGUYA
               <span className={classes.span}>
                 日本人のために開発した竹歯ブラシ
@@ -68,7 +68,7 @@ const Products: NextPage = () => {
               document={
                 "十分な強度としなやかさをもった竹歯ブラシを作るには、ひとつの歯ブラシに3年以上の乾燥と徹底した研磨が必要です。私たちは、お客様が安心してご使用できるように、全ての歯ブラシを研磨・検品を行っています。"
               }
-              image={<img src={inCup} alt="写真1" />}
+              image={<img className={classes.image} src={inCup} alt="写真1" />}
               column="column-reverse"
               row="row"
             />

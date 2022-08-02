@@ -60,7 +60,7 @@ const Contact: NextPage = () => {
             CONTACT
             <span className={styles.span}>お問い合わせ</span>
           </h1>
-          <h2 className={styles.text}>
+          <h2 className={styles.description}>
             商品へのお問い合わせや、お見積もりのご依頼は以下の方法で承ります。
           </h2>
         </div>

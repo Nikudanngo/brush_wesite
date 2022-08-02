@@ -32,7 +32,7 @@ const Instruction: NextPage = () => {
               INSTRUCTION
               <span className={styles.span}>取り扱い</span>
             </h1>
-            <h2 className={styles.text}>本製品の使用上の注意</h2>
+            <h2 className={styles.description}>本製品の使用上の注意</h2>
             <ol className={styles.ol}>
               {instructions.map((instruction) => (
                 <li className={styles.li} key={instruction}>
