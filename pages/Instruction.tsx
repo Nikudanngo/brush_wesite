@@ -4,6 +4,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
 
 const Instruction: NextPage = () => {
   const instructions = [
@@ -41,6 +42,7 @@ const Instruction: NextPage = () => {
             </ol>
           </div>
         </main>
+        <Footer />
       </div>
     </React.Fragment>
   );

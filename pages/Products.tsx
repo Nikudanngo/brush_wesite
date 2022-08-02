@@ -8,6 +8,7 @@ import ColumnsGrid from "../components/ColumnsGrid";
 import Buying from "../components/Buy";
 import Image from "next/image";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const useStyle = makeStyles({
   root: {
@@ -126,6 +127,7 @@ const Products: NextPage = () => {
             <Buying />
           </Container>
         </div>
+        <Footer />
       </div>
     </React.Fragment>
   );

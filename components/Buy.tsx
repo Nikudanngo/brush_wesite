@@ -77,7 +77,12 @@ const Buying = () => {
             </Button>
 
             {/* 外部リンク */}
-            <Button size="small" color="primary" href="" target="_blank">
+            <Button
+              size="small"
+              color="primary"
+              href="https://www.amazon.co.jp/dp/B09V4LKTY7"
+              target="_blank"
+            >
               Buy on amazon
             </Button>
 

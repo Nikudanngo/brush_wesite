@@ -13,7 +13,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-const pages = ["Home", "Products", "Instruction", "Contact"];
+const pages = ["", "Products", "Instruction", "Contact"];
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -68,25 +68,20 @@ const Header: NextPage = () => {
             </Typography>
             <Box sx={{ flexGrow: 2, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={() => {
-                    handleCloseNavMenu();
-                  }}
-                  sx={{ my: 1, color: "black", display: "block" }}
-                  // element={Link}
-                  // to={"/"+page}
-                >
-                  {page === "Home" ? (
-                    <Link href="/">
-                      <a>{page}</a>
-                    </Link>
-                  ) : (
-                    <Link href={"/" + page}>
-                      <a>{page}</a>
-                    </Link>
-                  )}
-                </Button>
+                <Link href={`/${page}`} key={page}>
+                  <Button
+                    key={page}
+                    onClick={() => {
+                      handleCloseNavMenu();
+                    }}
+                    sx={{ my: 1, color: "black", display: "block" }}
+                    // element={Link}
+                    // to={"/"+page}
+                  >
+                    {/* {page} */}
+                    {page === "" ? "Home" : page}
+                  </Button>
+                </Link>
               ))}
             </Box>
             <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
@@ -125,17 +120,11 @@ const Header: NextPage = () => {
                       handleCloseNavMenu();
                     }}
                   >
-                    <Typography textAlign="center">
-                      {page === "Home" ? (
-                        <Link href="/">
-                          <a>{page}</a>
-                        </Link>
-                      ) : (
-                        <Link href={"/" + page}>
-                          <a>{page}</a>
-                        </Link>
-                      )}
-                    </Typography>
+                    <Link href={`/${page}`} key={page}>
+                      <Typography textAlign="center">
+                        {page === "" ? "Home" : page}
+                      </Typography>
+                    </Link>
                   </MenuItem>
                 ))}
               </Menu>

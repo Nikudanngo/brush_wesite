@@ -15,6 +15,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
 const useStyle = makeStyles({
   root: {
     // これでGridの影(shadow)が消える
@@ -142,6 +143,7 @@ const Contact: NextPage = () => {
           loading="lazy"
         ></iframe>
       </Box>
+      <Footer />
     </React.Fragment>
   );
 };

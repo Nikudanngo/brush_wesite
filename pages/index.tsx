@@ -6,6 +6,7 @@ import Slide from "../components/Slider";
 import ColumnsGrid from "../components/ColumnsGrid";
 import Buying from "../components/Buy";
 import ImageList from "../components/ImageList";
+import Footer from "../components/Footer";
 const Home: NextPage = () => {
   return (
     // <div className={styles.container}>
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
         />
         <Buying />
       </main>
+      <Footer />
     </div>
   );
 };
