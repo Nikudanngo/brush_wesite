@@ -5,10 +5,6 @@ import styles from "../styles/Home.module.css";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@mui/material";
 import ColumnsGrid from "../components/ColumnsGrid";
-import inCup from "/img/imageList/inCup.jpg";
-import onTowel from "/img/imageList/LyingOnTowel.jpg";
-import onPowder from "/img/imageList/onPowder.jpg";
-import CycleImg from "/img/cycle.png";
 import Buying from "../components/Buy";
 import Image from "next/image";
 import Header from "../components/Header";
@@ -36,6 +32,14 @@ const useStyle = makeStyles({
     },
   },
 });
+const inCup =
+  "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2FinCup.jpg?alt=media&token=c2697181-726e-467c-8148-da2a8bf2e43d";
+const onTowel =
+  "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2FLyingOnTowel.jpg?alt=media&token=5664f63e-5f1b-4e4a-bc73-2b034f45877d";
+const onPowder =
+  "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2FonPowder.jpg?alt=media&token=886ed2e7-9d40-4b2a-af63-9e34a848e874";
+const CycleImg =
+  "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2Fcycle.png?alt=media&token=255c3d3f-997a-4714-8fdb-fce6b05796aa";
 
 const Products: NextPage = () => {
   const classes = useStyle();
@@ -64,9 +68,7 @@ const Products: NextPage = () => {
               document={
                 "十分な強度としなやかさをもった竹歯ブラシを作るには、ひとつの歯ブラシに3年以上の乾燥と徹底した研磨が必要です。私たちは、お客様が安心してご使用できるように、全ての歯ブラシを研磨・検品を行っています。"
               }
-              image={
-                <Image src={inCup} className={classes.image} alt="写真1" />
-              }
+              image={<Image width={500} height={750} src={inCup} alt="写真1" />}
               column="column-reverse"
               row="row"
             />
@@ -76,7 +78,13 @@ const Products: NextPage = () => {
                 "日本人のためにデザインされた、ちょうどいい大きさで心地よい磨き心地。徹底的な品質管理、特殊な加工によりなめらかな肌触りを実現。"
               }
               image={
-                <Image src={onPowder} className={classes.image} alt="写真2" />
+                <Image
+                  width={500}
+                  height={300}
+                  src={onPowder}
+                  className={classes.image}
+                  alt="写真2"
+                />
               }
               column="column-reverse"
               row="row-reverse"
@@ -87,7 +95,13 @@ const Products: NextPage = () => {
                 "プラスチックの使用を95%以上削減。これにより、焼却時に発生する有害物質を大幅に削減可能。"
               }
               image={
-                <Image src={onTowel} className={classes.image} alt="写真3" />
+                <Image
+                  width={500}
+                  height={330}
+                  src={onTowel}
+                  className={classes.image}
+                  alt="写真3"
+                />
               }
               column="column-reverse"
               row="row"
@@ -98,7 +112,13 @@ const Products: NextPage = () => {
                 "弊社ではホテル様から竹ゴミを買い取り、それらは竹炭商品として生まれ変わります。"
               }
               image={
-                <Image src={CycleImg} className={classes.image} alt="写真4" />
+                <Image
+                  width={500}
+                  height={400}
+                  src={CycleImg}
+                  className={classes.image}
+                  alt="写真4"
+                />
               }
               column="column-reverse"
               row="row-reverse"

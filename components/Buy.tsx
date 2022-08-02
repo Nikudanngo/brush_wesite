@@ -8,7 +8,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "@mui/system";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from "json2mq";
-import Image from "next/image";
 
 const useStyle = makeStyles({
   root: {
@@ -40,9 +39,8 @@ const Buying = () => {
               <CardMedia
                 component="img"
                 alt="Contemplative Reptile"
-                height="140"
                 // ランダムな画像
-                src="https://source.unsplash.com/random"
+                src="https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2FonPowder.jpg?alt=media&token=886ed2e7-9d40-4b2a-af63-9e34a848e874"
                 title="Contemplative Reptile"
               />
 

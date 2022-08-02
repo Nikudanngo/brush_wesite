@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.2",
     "@types/react-slick": "^0.23.10",
+    "firebase": "^9.9.1",
     "json2mq": "^0.2.0",
     "next": "12.2.3",
     "react": "18.2.0",

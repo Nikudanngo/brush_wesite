@@ -5,12 +5,13 @@
 .main {
   /* min-height: 100vh; */
   /* padding: 4rem 0; */
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "noto sans jp";
 }
 
 .footer {
@@ -49,6 +50,24 @@
 .title,
 .description {
   text-align: center;
+}
+
+.text {
+  font-family: "noto sans jp";
+  font-size: calc(10px + 4vmin);
+  margin-top: 0;
+  padding: 0.1em;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.span {
+  display: block;
+  text-align: center;
+  font-size: calc(3px + 2vmin);
+  color: rgba(33, 37, 41, 0.8);
 }
 
 .description {

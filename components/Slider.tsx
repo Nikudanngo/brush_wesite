@@ -1,10 +1,5 @@
 import * as React from "react";
 import type { NextPage } from "next";
-import slide1 from "/img/slide1.jpg";
-import slide2 from "/img/slide2.jpg";
-import slide3 from "/img/slide3.jpg";
-import slide4 from "/img/slide4.jpeg";
-import Logo from "/img/logo.png";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react"; //カルーセルに必要なタグをインポート
 import SwiperCore, { Pagination, Autoplay, EffectFade } from "swiper"; //欲しい機能をインポート
@@ -63,7 +58,14 @@ const useStyle = makeStyles({
 });
 
 const Slide: NextPage = () => {
-  const Slides = [slide1, slide2, slide3, slide4];
+  const Logo =
+    "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2Flogo.png?alt=media&token=de505d9e-ebc1-424e-89c1-03b58839c04b";
+  const Slides = [
+    "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2Fslide1.jpg?alt=media&token=a4e6fe21-1da0-4595-adc7-030edb6f5ed7",
+    "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2Fslide2.jpg?alt=media&token=30e3f9a4-d591-469b-ab88-34756aca4151",
+    "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2Fslide3.jpg?alt=media&token=795fe26e-a861-4948-80b0-1a4f2de1f6db",
+    "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2Fslide4.jpeg?alt=media&token=6b98c1ee-1464-417c-a22f-41c5398f9113",
+  ];
   const classes = useStyle();
   return (
     <>

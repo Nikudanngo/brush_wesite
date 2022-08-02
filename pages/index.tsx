@@ -3,6 +3,9 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Slide from "../components/Slider";
+import ColumnsGrid from "../components/ColumnsGrid";
+import Buying from "../components/Buy";
+import ImageList from "../components/ImageList";
 const Home: NextPage = () => {
   return (
     // <div className={styles.container}>
@@ -18,9 +21,21 @@ const Home: NextPage = () => {
       <Header />
       <Slide />
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className={styles.text}>
+          BAMBOO TOOTHBRUSH
+          <span className={styles.span}>竹から生まれた歯ブラシ</span>
         </h1>
+        {/* ColoumnsGrid.jsに記載 */}
+        <ColumnsGrid
+          title={
+            // リストで渡してColoumnsGrid.jsで改行させる
+            ["あなたの生活に", "自然な歯ブラシを"]
+          }
+          image={<ImageList />} // image枠にImageListを渡す
+          column="column"
+          row="row" // "row":文字/画像， "row-reverse"：画像/文字
+        />
+        <Buying />
       </main>
     </div>
   );
