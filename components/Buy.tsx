@@ -66,7 +66,7 @@ const Buying = () => {
             <Button
               size="small"
               color="primary"
-              href="https://www.amazon.co.jp/dp/B09V4LKTY7"
+              href="https://www.amazon.co.jp/Thought-Oceans-KAGUYA-ヘッド小さめ-口当たり滑らか/dp/B09V4LKTY7/ref=sr_1_1?m=A3I6MWRX1EEVQE&marketplaceID=A1VC38T7YXB528&qid=1659624726&s=merchant-items&sr=1-1"
               target="_blank"
             >
               Buy on amazon
