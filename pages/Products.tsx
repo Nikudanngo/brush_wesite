@@ -15,7 +15,9 @@ const onTowel =
 const onPowder =
   "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2FonPowder.jpg?alt=media&token=886ed2e7-9d40-4b2a-af63-9e34a848e874";
 const CycleImg =
-  "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2Fcycle.png?alt=media&token=255c3d3f-997a-4714-8fdb-fce6b05796aa";
+  "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2FCycle-image.png?alt=media&token=26cf2517-e204-48e6-9fa2-8e1cc44e2181";
+const AmenitiesImg =
+  "https://firebasestorage.googleapis.com/v0/b/toughtofoceans.appspot.com/o/image%2FimageList%2Famenity.jpg?alt=media&token=1a5e5b6c-20f9-403b-9a47-34dd8250d575";
 
 const Products: NextPage = () => {
   return (
@@ -68,13 +70,24 @@ const Products: NextPage = () => {
             <ColumnsGrid
               title={["サイクルシステムの", "ご紹介"]}
               document={
-                "弊社ではホテル様から竹ゴミを買い取り、それらは竹炭商品として生まれ変わります。"
+                "弊社ではホテル様から使用済みの竹商品を買い取り、それらは竹炭商品として生まれ変わります。"
               }
               image={
                 <img src={CycleImg} className={styles.image} alt="写真4" />
               }
               column="column-reverse"
               row="row-reverse"
+            />
+            <ColumnsGrid
+              title={["ホテル向けの", "アメニティ"]}
+              document={
+                "弊社ではホテル様向けに多数のアメニティをご用意しています。ご注文にはCONTACTページからご相談ください。"
+              }
+              image={
+                <img src={AmenitiesImg} className={styles.image} alt="写真3" />
+              }
+              column="column-reverse"
+              row="row"
             />
             <Buying />
           </Container>
